@@ -1,0 +1,9 @@
+MIDlet-3: ContactMidlet,,edu.upc.lsdatalib.test.ContactMidlet
+MIDlet-2: MobileBDRemoteMidlet,,edu.upc.BDAccessRemot.test.MobileBDRemoteMidlet
+MIDlet-1: AccesBDRemot,,edu.upc.BDAccessRemot.test.AccesBDRemot
+MIDlet-4: contactMidlet,,edu.upc.J2MESDLIB.test.contactMidlet
+MIDlet-Vendor: Vendor
+MIDlet-Version: 1.0
+MIDlet-Name: J2MEMicroDBv10
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: MIDP-2.1

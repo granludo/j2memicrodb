@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MVDData version="1.3">
+    <DesignDocument designVersion="MIDP-2" uidCounter="25">
+        <DesignComponent id="$MobileDevice" typeid="MIDP:$MobileDevice" uid="0"/>
+        <DesignComponent id="$StartPoint" typeid="MIDP:$StartPoint" uid="1">
+            <Property name="targetDisplayable"/>
+            <Property name="targetForwardDisplayable"/>
+        </DesignComponent>
+        <DesignComponent id="FPrin" typeid="MIDP:javax.microedition.lcdui.Form" uid="2">
+            <ContainerProperty name="commands">
+                <ContainerPropertyItem value="$CommandAction1"/>
+                <ContainerPropertyItem value="$CommandAction2"/>
+                <ContainerPropertyItem value="$CommandAction7"/>
+            </ContainerProperty>
+            <ContainerProperty name="items">
+                <ContainerPropertyItem value="stringItem1"/>
+                <ContainerPropertyItem value="stringItem2"/>
+            </ContainerProperty>
+        </DesignComponent>
+        <DesignComponent id="stringItem1" typeid="MIDP:javax.microedition.lcdui.StringItem" uid="3">
+            <Property name="label" value="STRING:Menu-1:"/>
+            <Property name="text" value="STRING:Fer Backup"/>
+            <ContainerProperty name="commands"/>
+        </DesignComponent>
+        <DesignComponent id="stringItem2" typeid="MIDP:javax.microedition.lcdui.StringItem" uid="4">
+            <Property name="label" value="STRING:Menu-2:"/>
+            <Property name="text" value="STRING:Fer Restore"/>
+            <ContainerProperty name="commands"/>
+        </DesignComponent>
+        <DesignComponent id="Backup" typeid="MIDP:javax.microedition.lcdui.Command" uid="5">
+            <Property name="label" value="STRING:Backup"/>
+            <Property name="priority" value="1"/>
+            <Property name="type" value="OK"/>
+        </DesignComponent>
+        <DesignComponent id="Restore" typeid="MIDP:javax.microedition.lcdui.Command" uid="6">
+            <Property name="label" value="STRING:Restore"/>
+            <Property name="priority" value="1"/>
+            <Property name="type" value="OK"/>
+        </DesignComponent>
+        <DesignComponent id="$CommandAction1" typeid="MIDP:CommandAction" uid="7">
+            <Property name="targetDisplayable" value="FBackup"/>
+            <Property name="targetForwardDisplayable" value="FPrin"/>
+            <Property name="actionSource" value="Backup"/>
+            <Property name="actionOrigin" value="FPrin"/>
+        </DesignComponent>
+        <DesignComponent id="$CommandAction2" typeid="MIDP:CommandAction" uid="8">
+            <Property name="targetDisplayable" value="FRestore"/>
+            <Property name="targetForwardDisplayable" value="FPrin"/>
+            <Property name="actionSource" value="Restore"/>
+            <Property name="actionOrigin" value="FPrin"/>
+        </DesignComponent>
+        <DesignComponent id="FBackup" typeid="MIDP:javax.microedition.lcdui.Form" uid="9">
+            <ContainerProperty name="commands">
+                <ContainerPropertyItem value="$CommandAction3"/>
+                <ContainerPropertyItem value="$CommandAction4"/>
+            </ContainerProperty>
+            <ContainerProperty name="items">
+                <ContainerPropertyItem value="stringItem3"/>
+                <ContainerPropertyItem value="TBackupPath"/>
+            </ContainerProperty>
+        </DesignComponent>
+        <DesignComponent id="FRestore" typeid="MIDP:javax.microedition.lcdui.Form" uid="10">
+            <ContainerProperty name="commands">
+                <ContainerPropertyItem value="$CommandAction5"/>
+                <ContainerPropertyItem value="$CommandAction6"/>
+            </ContainerProperty>
+            <ContainerProperty name="items">
+                <ContainerPropertyItem value="stringItem4"/>
+                <ContainerPropertyItem value="TRestorePath"/>
+            </ContainerProperty>
+        </DesignComponent>
+        <DesignComponent id="stringItem3" typeid="MIDP:javax.microedition.lcdui.StringItem" uid="11">
+            <Property name="label" value="STRING:Backup"/>
+            <Property name="text" value="STRING:"/>
+            <ContainerProperty name="commands"/>
+        </DesignComponent>
+        <DesignComponent id="TBackupPath" typeid="MIDP:javax.microedition.lcdui.TextField" uid="12">
+            <Property name="label" value="STRING:Directori dest\u00ED"/>
+            <Property name="string" value="STRING:SDCard/RecordStores/"/>
+            <Property name="maxSize" value="120"/>
+            <ContainerProperty name="commands"/>
+        </DesignComponent>
+        <DesignComponent id="okBackup" typeid="MIDP:javax.microedition.lcdui.Command" uid="13">
+            <Property name="label" value="STRING:Ok"/>
+            <Property name="priority" value="1"/>
+            <Property name="type" value="OK"/>
+        </DesignComponent>
+        <DesignComponent id="backBackup" typeid="MIDP:javax.microedition.lcdui.Command" uid="14">
+            <Property name="label" value="STRING:Back"/>
+            <Property name="priority" value="1"/>
+            <Property name="type" value="BACK"/>
+        </DesignComponent>
+        <DesignComponent id="$CommandAction3" typeid="MIDP:CommandAction" uid="15">
+            <Property name="targetDisplayable"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionSource" value="okBackup"/>
+            <Property name="actionOrigin" value="FBackup"/>
+        </DesignComponent>
+        <DesignComponent id="$CommandAction4" typeid="MIDP:CommandAction" uid="16">
+            <Property name="targetDisplayable" value="FPrin"/>
+            <Property name="targetForwardDisplayable" value="FBackup"/>
+            <Property name="actionSource" value="backBackup"/>
+            <Property name="actionOrigin" value="FBackup"/>
+        </DesignComponent>
+        <DesignComponent id="stringItem4" typeid="MIDP:javax.microedition.lcdui.StringItem" uid="17">
+            <Property name="label" value="STRING:Restore"/>
+            <Property name="text" value="STRING:"/>
+            <ContainerProperty name="commands"/>
+        </DesignComponent>
+        <DesignComponent id="TRestorePath" typeid="MIDP:javax.microedition.lcdui.TextField" uid="18">
+            <Property name="label" value="STRING:Directori font:"/>
+            <Property name="string" value="STRING:SDCard/RecordStores/"/>
+            <Property name="maxSize" value="120"/>
+            <ContainerProperty name="commands"/>
+        </DesignComponent>
+        <DesignComponent id="okRestore" typeid="MIDP:javax.microedition.lcdui.Command" uid="19">
+            <Property name="label" value="STRING:Ok"/>
+            <Property name="priority" value="1"/>
+            <Property name="type" value="OK"/>
+        </DesignComponent>
+        <DesignComponent id="backRestore" typeid="MIDP:javax.microedition.lcdui.Command" uid="20">
+            <Property name="label" value="STRING:Back"/>
+            <Property name="priority" value="1"/>
+            <Property name="type" value="BACK"/>
+        </DesignComponent>
+        <DesignComponent id="$CommandAction5" typeid="MIDP:CommandAction" uid="21">
+            <Property name="targetDisplayable"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionSource" value="okRestore"/>
+            <Property name="actionOrigin" value="FRestore"/>
+        </DesignComponent>
+        <DesignComponent id="$CommandAction6" typeid="MIDP:CommandAction" uid="22">
+            <Property name="targetDisplayable" value="FPrin"/>
+            <Property name="targetForwardDisplayable" value="FRestore"/>
+            <Property name="actionSource" value="backRestore"/>
+            <Property name="actionOrigin" value="FRestore"/>
+        </DesignComponent>
+        <DesignComponent id="exitFprin" typeid="MIDP:javax.microedition.lcdui.Command" uid="23">
+            <Property name="label" value="STRING:Exit"/>
+            <Property name="priority" value="1"/>
+            <Property name="type" value="EXIT"/>
+        </DesignComponent>
+        <DesignComponent id="$CommandAction7" typeid="MIDP:CommandAction" uid="24">
+            <Property name="targetDisplayable" value="$MobileDevice"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionSource" value="exitFprin"/>
+            <Property name="actionOrigin" value="FPrin"/>
+        </DesignComponent>
+    </DesignDocument>
+    <FlowDocument version="1.1">
+        <Node id="$MobileDevice" location="160,192" order=",$StartPoint,,,,,,,,,$ExitPoint,,,,,"/>
+        <Node id="FPrin" location="416,128" order="$CommandAction1,$CommandAction2,$CommandAction7,,,,,,,,$Default,,,,,"/>
+        <Node id="FBackup" location="568,128" order="$CommandAction3,$CommandAction4,,,,,,,,,$Default,,,,,"/>
+        <Node id="FRestore" location="720,128" order="$CommandAction5,$CommandAction6,,,,,,,,,$Default,,,,,"/>
+        <Link id="$CommandAction1$ActionLink" path="456,120,512,120,512,104,528,104"/>
+        <Link id="$CommandAction2$ActionLink" path="456,104,512,104,664,104,680,104"/>
+        <Link id="$CommandAction4$ActionLink" path="608,104,652,104,363,104,376,104"/>
+        <Link id="$CommandAction6$ActionLink" path="760,104,810,104,810,48,357,48,357,104,376,104"/>
+        <Link id="$CommandAction7$ActionLink" path="456,88,512,88,512,36,47,36,47,168,120,168"/>
+    </FlowDocument>
+</MVDData>

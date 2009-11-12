@@ -1,0 +1,15 @@
+edu.upc.BDAccessRemot
+edu.upc.BDAccessRemot.forumWikiAPI
+edu.upc.BDAccessRemot.http
+edu.upc.BDAccessRemot.j2meApi
+edu.upc.BDAccessRemot.test
+edu.upc.J2MESDLIB
+edu.upc.J2MESDLIB.test
+edu.upc.J2MESDLIB.utilssgbd
+edu.upc.lsdatalib.comunsfitxer
+edu.upc.lsdatalib.fitxerrelatiu
+edu.upc.lsdatalib.fitxersequencial
+edu.upc.lsdatalib.fitxersequencialvalor
+edu.upc.lsdatalib.fitxervalor
+edu.upc.lsdatalib.test
+edu.upc.lsdatalib.utilsfitxer

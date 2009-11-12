@@ -1,0 +1,11 @@
+MIDlet-1: AccesBDRemot,,edu.upc.BDAccessRemot.test.AccesBDRemot
+MIDlet-2: MobileBDRemoteMidlet,,edu.upc.BDAccessRemot.test.MobileBDRemoteMidlet
+MIDlet-3: ContactMidlet,,edu.upc.lsdatalib.test.ContactMidlet
+MIDlet-4: contactMidlet,,edu.upc.J2MESDLIB.test.contactMidlet
+MIDlet-Jar-Size: 459294
+MIDlet-Jar-URL: J2MEMicroDBv10.jar
+MIDlet-Name: J2MEMicroDBv10
+MIDlet-Vendor: Vendor
+MIDlet-Version: 1.0
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: MIDP-2.1

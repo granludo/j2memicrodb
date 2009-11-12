@@ -1,0 +1,356 @@
+#
+# Constants de la funció print de l'excepció
+#
+-1 = Codi de l'excepció:
+-2 = Métode causant de l'excepció:
+-3 = Missatge:
+-4 = Traça:
+
+#
+# Missatges per al programador | Métodes que llencen l'excepció  
+#
+0 = Excepció desconeguda | Mètode desconegut
+
+## comunsfitxer.PDAObject
+1 = L'objecte passat com a paràmetre a la constructora és igual a null | comunsfitxer.PDAObject.PDAObject(Object obj)
+2 = El tamany de l'objecte i el paràmetre size no coincideixen | comunsfitxer.PDAObject.setData(byte[] b, int size)
+
+## fitxerrelatiu.PDAStoreRMS
+
+# fitxerrelatiu.PDAStoreRMS.PDAStoreRMS(String name)
+3 = El nom del PDAStore no pot superar els 27 caràcters | fitxerrelatiu.PDAStoreRMS.PDAStoreRMS(String name)
+4 = El PDAStoreRMS està al màxim de la seva capacitat | fitxerrelatiu.PDAStoreRMS.PDAStoreRMS(String name)
+5 = No es troba cap PDAStoreRMS amb el nom indicat | fitxerrelatiu.PDAStoreRMS.PDAStoreRMS(String name)
+6 = Excepció de tipus general | fitxerrelatiu.PDAStoreRMS.PDAStoreRMS(String name) 
+
+# fitxerrelatiu.PDAStoreRMS.write(PDAStoreable object, int pos)
+7 = El PDAStoreable passat com a paràmetre és null | fitxerrelatiu.PDAStoreRMS.write(PDAStoreable object, int pos)
+8 = El tamany del PDAStoreable passat com a paràmetre és <=0 | fitxerrelatiu.PDAStoreRMS.write(PDAStoreable object, int pos)
+9 = La posició passada com a paràmetre no és vàlida (<0) | fitxerrelatiu.PDAStoreRMS.write(PDAStoreable object, int pos) 
+10 = La posició passada com a paràmetre ja està ocupada per un altre PDAStoreable | fitxerrelatiu.PDAStoreRMS.write(PDAStoreable object, int pos) 
+11 = No es pot fer l'escriptura, ja que el PDAStoreRMS no és obert o bé no ha estat inicialitzat correctament | fitxerrelatiu.PDAStoreRMS.write(PDAStoreable object, int pos)
+12 = No es pot fer l'escriptura, ja que el PDAStoreRMS està al màxim de la seva capacitat | fitxerrelatiu.PDAStoreRMS.write(PDAStoreable object, int pos)
+13 = Excepció de tipus general | fitxerrelatiu.PDAStoreRMS.write(PDAStoreable object, int pos)
+
+# fitxerrelatiu.PDAStoreRMS.read(long pos)
+14 = La posició passada com a paràmetre no és vàlida (<0) | fitxerrelatiu.PDAStoreRMS.read(long pos)
+15 = No existeix cap PDAStoreable a la posició passada com a paràmetre, no es troba a l'índex sobre el PDAStoreRMS | fitxerrelatiu.PDAStoreRMS.read(long pos)
+16 = No existeix cap PDAStoreable a la posició passada com a paràmetre, no es troba físicament al PDAStoreRMS | fitxerrelatiu.PDAStoreRMS.read(long pos)
+17 = No es pot fer la lectura, ja que el PDAStoreRMS no és obert o bé no ha estat inicialitzat correctament | fitxerrelatiu.PDAStoreRMS.read(long pos)   
+18 = Excepció de tipus general  | fitxerrelatiu.PDAStoreRMS.read(long pos)
+19 = Excepció en generar l'objecte PDAStoreable. No es troba la classe PDAStoreable | fitxerrelatiu.PDAStoreRMS.read(long pos)
+20 = Excepció en generar l'objecte PDAStoreable. No es pot instanciar la classe PDAStoreable | fitxerrelatiu.PDAStoreRMS.read(long pos)
+21 = Excepció en generar l'objecte PDAStoreable. Accés il·legal a la classe PDAStoreable | fitxerrelatiu.PDAStoreRMS.read(long pos)
+
+# fitxerrelatiu.PDAStoreRMS.delete(int pos)
+22 = La posició passada com a paràmetre no és vàlida (<0) | fitxerrelatiu.PDAStoreRMS.delete(int pos) 
+23 = No existeix cap PDAStoreable a la posició passada com a paràmetre, no es troba a l'índex sobre el PDAStoreRMS | fitxerrelatiu.PDAStoreRMS.delete(int pos)
+24 = No existeix cap PDAStoreable a la posició passada com a paràmetre, no es troba físicament al PDAStoreRMS | fitxerrelatiu.PDAStoreRMS.delete(int pos) 
+25 = No es pot fer l'escriptura, ja que el PDAStoreRMS no és obert o bé no ha estat inicialitzat correctament | fitxerrelatiu.PDAStoreRMS.delete(int pos)
+26 = Excepció de tipus general | fitxerrelatiu.PDAStoreRMS.delete(int pos)
+
+# fitxerrelatiu.PDAStoreRMS.update(PDAStoreable object, int pos)
+27 = El PDAStoreable passat com a paràmetre és null | fitxerrelatiu.PDAStoreRMS.update(PDAStoreable object, int pos)
+28 = El tamany del PDAStoreable passat com a paràmetre és <=0 | fitxerrelatiu.PDAStoreRMS.update(PDAStoreable object, int pos)
+29 = La posició passada com a paràmetre no és vàlida (<0) | fitxerrelatiu.PDAStoreRMS.update(PDAStoreable object, int pos) 
+30 = No existeix cap PDAStoreable a la posició passada com a paràmetre, no es troba a l'índex sobre el PDAStoreRMS | fitxerrelatiu.PDAStoreRMS.update(PDAStoreable object, int pos) 
+31 = No existeix cap PDAStoreable a la posició passada com a paràmetre, no es troba físicament al PDAStoreRMS | fitxerrelatiu.PDAStoreRMS.update(PDAStoreable object, int pos) 
+32 = No es pot fer la modificació, ja que el PDAStoreRMS no és obert o bé no ha estat inicialitzat correctament | fitxerrelatiu.PDAStoreRMS.update(PDAStoreable object, int pos)  
+33 = No es pot fer la modificació demanada, ja que el PDAStoreRMS està al màxim de la seva capacitat | fitxerrelatiu.PDAStoreRMS.update(PDAStoreable object, int pos)
+34 = Excepció de tipus general | fitxerrelatiu.PDAStoreRMS.update(PDAStoreable object, int pos)
+
+# fitxerrelatiu.PDAStoreRMS.closePDAStore()
+35 = No es pot tancar el PDAStoreRMS, ja que el PDAStoreRMS no és obert o bé no ha estat inicialitzat correctament | fitxerrelatiu.PDAStoreRMS.closePDAStore()
+36 = Excepció de tipus general | fitxerrelatiu.PDAStoreRMS.closePDAStore()
+
+# fitxerrelatiu.PDAStoreRMS.deletePDAStore()
+37 = No es pot esborrar el PDAStoreRMS, ja que el PDAStoreRMS no és obert o bé no ha estat inicialitzat correctament | fitxerrelatiu.PDAStoreRMS.deletePDAStore()
+38 = Excepció de tipus general | fitxerrelatiu.PDAStoreRMS.deletePDAStore()
+
+# Errors generats per PDAStoreIndexVector
+39 = No s'ha pogut inserir l'element perquè no hi ha prou espai a l'índex | fitxerrelatiu.PDAStoreRMS.write(PDAStoreable object, int pos)
+
+# Errors generats per PDAStoreIndexRMS
+40 = No hi ha prou espai a disc per a l'índex sobre el PDAStoreRMS | fitxerrelatiu.PDAStoreRMS.PDAStoreRMS(String name)
+41 = No es troba cap index sobre el PDAStoreRMS amb el nom indicat | fitxerrelatiu.PDAStoreRMS.PDAStoreRMS(String name)
+42 = Excepció de tipus general | fitxerrelatiu.PDAStoreRMS.PDAStoreRMS(String name)
+43 = No s'ha pogut fer la còpia de l'índex a memòria perquè no hi ha prou espai | fitxerrelatiu.PDAStoreRMS.PDAStoreRMS(String name)
+44 = No s'ha pogut fer la còpia de l'índex a memòria perquè l'índex no s'ha inicialitzat correctament | fitxerrelatiu.PDAStoreRMS.PDAStoreRMS(String name)
+45 = No s'ha pogut fer la còpia de l'índex a memòria perquè l'índex és defectuós | fitxerrelatiu.PDAStoreRMS.PDAStoreRMS(String name)
+46 = No s'ha pogut fer la còpia de l'índex a memòria perquè hi ha hagut una excepció de tipus general | fitxerrelatiu.PDAStoreRMS.PDAStoreRMS(String name)
+47 = No s'ha pogut guardar l'índex a disc perquè l'índex no s'ha inicialitzat correctament | fitxerrelatiu.PDAStoreRMS.saveIndex()
+48 = No s'ha pogut guardar l'índex a disc perquè hi ha hagut una excepció de tipus general | fitxerrelatiu.PDAStoreRMS.saveIndex()
+49 = No s'ha pogut guardar l'índex a disc perquè no hi ha prou espai | fitxerrelatiu.PDAStoreRMS.saveIndex()
+50 = No s'ha pogut tancat el PDAStoreRMS perquè l'índex no s'ha inicialitzat correctament | fitxerrelatiu.PDAStoreRMS.closePDAStore()
+51 = No s'ha pogut tancat el PDAStoreRMS perquè hi ha hagut una excepció de tipus general en tancar l'índex | fitxerrelatiu.PDAStoreRMS.closePDAStore()
+52 = No s'ha pogut esborrar el PDAStoreRMS perquè l'índex no s'ha inicialitzat correctament | fitxerrelatiu.PDAStoreRMS.deletePDAStore()  
+53 = No s'ha pogut esborrar el PDAStoreRMS perquè hi ha hagut una excepció de tipus general en esborrar l'índex | fitxerrelatiu.PDAStoreRMS.deletePDAStore()
+
+
+## fitxersequencial.PDAStoreSequence
+
+# fitxersequencial.PDAStoreSequence.PDAStoreSequence(String name)
+54 = El nom del PDAStore no pot superar els 27 caràcters | fitxersequencial.PDAStoreSequence.PDAStoreSequence(String name)
+55 = El PDAStoreSequence està al màxim de la seva capacitat | fitxersequencial.PDAStoreSequence.PDAStoreSequence(String name)
+56 = No es troba cap PDAStoreSequence amb el nom indicat | fitxersequencial.PDAStoreSequence.PDAStoreSequence(String name)
+57 = Excepció de tipus general | fitxersequencial.PDAStoreSequence.PDAStoreSequence(String name) 
+
+# fitxersequencial.PDAStoreSequence.write(PDAStoreable object)
+58 = El PDAStoreable passat com a paràmetre és null | fitxersequencial.PDAStoreSequence.write(PDAStoreable object)
+59 = El tamany del PDAStoreable passat com a paràmetre és <=0 | fitxersequencial.PDAStoreSequence.write(PDAStoreable object)
+60 = No es pot fer l'escriptura, ja que el PDAStoreSequence no és obert o bé no ha estat inicialitzat correctament | fitxersequencial.PDAStoreSequence.write(PDAStoreable object)
+61 = No es pot fer l'escriptura, ja que el PDAStoreSequence està al màxim de la seva capacitat | fitxersequencial.PDAStoreSequence.write(PDAStoreable object)
+62 = Excepció de tipus general | fitxersequencial.PDAStoreSequence.write(PDAStoreable object)
+
+# fitxersequencial.PDAStoreSequence.read()
+63 = No existeix cap PDAStoreable a la posició actual, no es troba a l'índex sobre el PDAStoreSequence | fitxersequencial.PDAStoreSequence.read()
+64 = No existeix cap PDAStoreable a la posició actual, no es troba físicament al PDAStoreSequence | fitxersequencial.PDAStoreSequence.read()
+65 = No es pot fer la lectura, ja que el PDAStoreRMS no és obert o bé no ha estat inicialitzat correctament | fitxersequencial.PDAStoreSequence.read()  
+66 = Excepció de tipus general  | fitxersequencial.PDAStoreSequence.read()
+67 = Excepció en generar l'objecte PDAStoreable. No es troba la classe PDAStoreable | fitxersequencial.PDAStoreSequence.read()
+68 = Excepció en generar l'objecte PDAStoreable. No es pot instanciar la classe PDAStoreable | fitxersequencial.PDAStoreSequence.read()
+69 = Excepció en generar l'objecte PDAStoreable. Accés il·legal a la classe PDAStoreable | fitxersequencial.PDAStoreSequence.read()
+
+# fitxersequencial.PDAStoreSequence.delete()
+70 = No existeix cap PDAStoreable a la posició actual, no es troba a l'índex sobre el PDAStoreSequence | fitxersequencial.PDAStoreSequence.delete()
+71 = No existeix cap PDAStoreable a la posició actual, no es troba físicament al PDAStoreSequence | fitxersequencial.PDAStoreSequence.delete()
+72 = No es pot fer l'escriptura, ja que el PDAStoreSequence no és obert o bé no ha estat inicialitzat correctament | fitxersequencial.PDAStoreSequence.delete()
+73 = Excepció de tipus general | fitxersequencial.PDAStoreSequence.delete()
+
+# fitxersequencial.PDAStoreSequence.update(PDAStoreable obj)
+74 = El PDAStoreable passat com a paràmetre és null | fitxersequencial.PDAStoreSequence.update(PDAStoreable obj)
+75 = El tamany del PDAStoreable passat com a paràmetre és <=0 | fitxersequencial.PDAStoreSequence.update(PDAStoreable obj)
+76 = No existeix cap PDAStoreable a la posició actual, no es troba a l'índex sobre el PDAStoreSequence | fitxersequencial.PDAStoreSequence.update(PDAStoreable obj)
+77 = No existeix cap PDAStoreable a la posició actual, no es troba físicament al PDAStoreSequence | fitxersequencial.PDAStoreSequence.update(PDAStoreable obj)
+78 = No es pot fer la modificació, ja que el PDAStoreSequence no és obert o bé no ha estat inicialitzat correctament | fitxersequencial.PDAStoreSequence.update(PDAStoreable obj)  
+79 = No es pot fer la modificació demanada, ja que el PDAStoreSequence està al màxim de la seva capacitat | fitxersequencial.PDAStoreSequence.update(PDAStoreable obj)
+80 = Excepció de tipus general | fitxersequencial.PDAStoreSequence.update(PDAStoreable obj)
+
+# fitxersequencial.PDAStoreSequence.closePDAStore()
+81 = No es pot tancar el PDAStoreSequence, ja que el PDAStoreSequence no és obert o bé no ha estat inicialitzat correctament | fitxersequencial.PDAStoreSequence.closePDAStore()
+82 = Excepció de tipus general | fitxersequencial.PDAStoreSequence.closePDAStore()
+
+# fitxersequencial.PDAStoreSequence.deletePDAStore()
+83 = No es pot esborrar el PDAStoreSequence, ja que el PDAStoreSequence no és obert o bé no ha estat inicialitzat correctament | fitxersequencial.PDAStoreSequence.deletePDAStore()
+84 = Excepció de tipus general | fitxersequencial.PDAStoreSequence.deletePDAStore()
+
+# Errors generats per PDAStoreIndexVector
+85 = No s'ha pogut inserir l'element perquè no hi ha prou espai a l'índex | fitxersequencial.PDAStoreSequence.write(PDAStoreable object)
+
+# Errors generats per PDAStoreIndexRMS
+86 = No hi ha prou espai a disc per a l'índex sobre el PDAStoreSequence | fitxersequencial.PDAStoreSequence.PDAStoreSequence(String name)
+87 = No es troba cap index sobre el PDAStoreSequence amb el nom indicat | fitxersequencial.PDAStoreSequence.PDAStoreSequence(String name)
+88 = Excepció de tipus general | fitxersequencial.PDAStoreSequence.PDAStoreSequence(String name)
+89 = No s'ha pogut fer la còpia de l'índex a memòria perquè no hi ha prou espai | fitxersequencial.PDAStoreSequence.PDAStoreSequence(String name)
+90 = No s'ha pogut fer la còpia de l'índex a memòria perquè l'índex no s'ha inicialitzat correctament | fitxersequencial.PDAStoreSequence.PDAStoreSequence(String name)
+91 = No s'ha pogut fer la còpia de l'índex a memòria perquè l'índex és defectuós | fitxersequencial.PDAStoreSequence.PDAStoreSequence(String name)
+92 = No s'ha pogut fer la còpia de l'índex a memòria perquè hi ha hagut una excepció de tipus general | fitxersequencial.PDAStoreSequence.PDAStoreSequence(String name)
+93 = No s'ha pogut guardar l'índex a disc perquè l'índex no s'ha inicialitzat correctament | fitxersequencial.PDAStoreSequence.saveIndex()
+94 = No s'ha pogut guardar l'índex a disc perquè hi ha hagut una excepció de tipus general | fitxersequencial.PDAStoreSequence.saveIndex()
+95 = No s'ha pogut guardar l'índex a disc perquè no hi ha prou espai | fitxersequencial.PDAStoreSequence.saveIndex()
+96 = No s'ha pogut tancat el PDAStoreSequence perquè l'índex no s'ha inicialitzat correctament | fitxersequencial.PDAStoreSequence.closePDAStore()
+97 = No s'ha pogut tancat el PDAStoreSequence perquè hi ha hagut una excepció de tipus general en tancar l'índex | fitxersequencial.PDAStoreSequence.closePDAStore()
+98 = No s'ha pogut esborrar el PDAStoreSequence perquè l'índex no s'ha inicialitzat correctament | fitxersequencial.PDAStoreSequence.deletePDAStore()  
+99 = No s'ha pogut esborrar el PDAStoreSequence perquè hi ha hagut una excepció de tipus general en esborrar l'índex | fitxersequencial.PDAStoreSequence.deletePDAStore()
+
+
+## fitxersequencialvalor.PDALabeledStoreSequence
+
+# fitxersequencialvalor.PDALabeledStoreSequence.PDAStoreSequence(String name)
+100 = El nom del PDAStore no pot superar els 27 caràcters | fitxersequencialvalor.PDALabeledStoreSequence.PDAStoreSequence(String name)
+101 = El PDALabeledStoreSequence està al màxim de la seva capacitat | fitxersequencialvalor.PDALabeledStoreSequence.PDAStoreSequence(String name)
+102 = No es troba cap PDALabeledStoreSequence amb el nom indicat | fitxersequencialvalor.PDALabeledStoreSequence.PDAStoreSequence(String name)
+103 = Excepció de tipus general | fitxersequencialvalor.PDALabeledStoreSequence.PDAStoreSequence(String name)
+
+# fitxersequencialvalor.PDALabeledStoreSequence.write(PDAStoreable object, String label)
+104 = El PDAStoreable passat com a paràmetre és null | fitxersequencialvalor.PDALabeledStoreSequence.write(PDAStoreable object, String label)
+105 = El tamany del PDAStoreable passat com a paràmetre és <=0 | fitxersequencialvalor.PDALabeledStoreSequence.write(PDAStoreable object, String label)
+106 = No es pot fer l'escriptura, ja que el PDALabeledStoreSequence no és obert o bé no ha estat inicialitzat correctament | fitxersequencialvalor.PDALabeledStoreSequence.write(PDAStoreable object, String label)
+107 = No es pot fer l'escriptura, ja que el PDALabeledStoreSequence està al màxim de la seva capacitat | fitxersequencialvalor.PDALabeledStoreSequence.write(PDAStoreable object, String label)
+108 = Excepció de tipus general | fitxersequencialvalor.PDALabeledStoreSequence.write(PDAStoreable object, String label)
+
+# fitxersequencialvalor.PDALabeledStoreSequence.read()
+109 = No existeix cap PDAStoreable a la posició actual, no es troba a l'índex sobre el PDALabeledStoreSequence | fitxersequencialvalor.PDALabeledStoreSequence.read()
+110 = No existeix cap PDAStoreable a la posició actual, no es troba físicament al PDALabeledStoreSequence | fitxersequencialvalor.PDALabeledStoreSequence.read()
+111 = No es pot fer la lectura, ja que el PDALabeledStoreSequence no és obert o bé no ha estat inicialitzat correctament | fitxersequencialvalor.PDALabeledStoreSequence.read()  
+112 = Excepció de tipus general  | fitxersequencialvalor.PDALabeledStoreSequence.read()
+113 = Excepció en generar l'objecte PDAStoreable. No es troba la classe PDAStoreable | fitxersequencialvalor.PDALabeledStoreSequence.read()
+114 = Excepció en generar l'objecte PDAStoreable. No es pot instanciar la classe PDAStoreable | fitxersequencialvalor.PDALabeledStoreSequence.read()
+115 = Excepció en generar l'objecte PDAStoreable. Accés il·legal a la classe PDAStoreable | fitxersequencialvalor.PDALabeledStoreSequence.read()
+
+# fitxersequencialvalor.PDALabeledStoreSequence.delete()
+116 = No existeix cap PDAStoreable a la posició actual, no es troba a l'índex sobre el PDALabeledStoreSequence | fitxersequencialvalor.PDALabeledStoreSequence.delete()
+117 = No existeix cap PDAStoreable a la posició actual, no es troba físicament al PDALabeledStoreSequence | fitxersequencialvalor.PDALabeledStoreSequence.delete()
+118 = No es pot fer l'escriptura, ja que el PDALabeledStoreSequence no és obert o bé no ha estat inicialitzat correctament | fitxersequencialvalor.PDALabeledStoreSequence.delete()
+119 = Excepció de tipus general | fitxersequencialvalor.PDALabeledStoreSequence.delete()
+
+# fitxersequencialvalor.PDALabeledStoreSequence.update(PDAStoreable object)
+120 = El PDAStoreable passat com a paràmetre és null | fitxersequencialvalor.PDALabeledStoreSequence.update(PDAStoreable object)
+121 = El tamany del PDAStoreable passat com a paràmetre és <=0 | fitxersequencialvalor.PDALabeledStoreSequence.update(PDAStoreable object)
+122 = No existeix cap PDAStoreable a la posició actual, no es troba a l'índex sobre el PDALabeledStoreSequence | fitxersequencialvalor.PDALabeledStoreSequence.update(PDAStoreable object)
+123 = No existeix cap PDAStoreable a la posició actual, no es troba físicament al PDALabeledStoreSequence | fitxersequencialvalor.PDALabeledStoreSequence.update(PDAStoreable object) 
+124 = No es pot fer la modificació, ja que el PDALabeledStoreSequence no és obert o bé no ha estat inicialitzat correctament | fitxersequencialvalor.PDALabeledStoreSequence.update(PDAStoreable object)  
+125 = No es pot fer la modificació demanada, ja que el PDALabeledStoreSequence està al màxim de la seva capacitat | fitxersequencialvalor.PDALabeledStoreSequence.update(PDAStoreable object)
+126 = Excepció de tipus general | fitxersequencialvalor.PDALabeledStoreSequence.update(PDAStoreable object)
+
+# fitxersequencialvalor.PDALabeledStoreSequence.closePDAStore()
+127 = No es pot tancar el PDALabeledStoreSequence, ja que el PDALabeledStoreSequence no és obert o bé no ha estat inicialitzat correctament | fitxersequencialvalor.PDALabeledStoreSequence.closePDAStore()
+128 = Excepció de tipus general | fitxersequencialvalor.PDALabeledStoreSequence.closePDAStore()
+
+# fitxersequencialvalor.PDALabeledStoreSequence.deletePDAStore()
+129 = No es pot esborrar el PDALabeledStoreSequence, ja que el PDALabeledStoreSequence no és obert o bé no ha estat inicialitzat correctament | fitxersequencialvalor.PDALabeledStoreSequence.deletePDAStore()
+130 = Excepció de tipus general | fitxersequencialvalor.PDALabeledStoreSequence.deletePDAStore()
+
+# Errors generats per PDAStoreIndexVector
+131 = No s'ha pogut inserir l'element perquè no hi ha prou espai a l'índex | fitxersequencialvalor.PDALabeledStoreSequence.write(PDAStoreable object, String label)
+
+# Errors generats per PDAStoreIndexRMS
+132 = No hi ha prou espai a disc per a l'índex sobre el PDALabeledStoreSequence | fitxersequencialvalor.PDALabeledStoreSequence.PDAStoreSequence(String name)
+133 = No es troba cap índex sobre el PDALabeledStoreSequence amb el nom indicat | fitxersequencialvalor.PDALabeledStoreSequence.PDAStoreSequence(String name)
+134 = Excepció de tipus general | fitxersequencialvalor.PDALabeledStoreSequence.PDAStoreSequence(String name)
+135 = No s'ha pogut fer la còpia de l'índex a memòria perquè no hi ha prou espai | fitxersequencialvalor.PDALabeledStoreSequence.PDAStoreSequence(String name)
+136 = No s'ha pogut fer la còpia de l'índex a memòria perquè l'índex no s'ha inicialitzat correctament | fitxersequencialvalor.PDALabeledStoreSequence.PDAStoreSequence(String name)
+137 = No s'ha pogut fer la còpia de l'índex a memòria perquè l'índex és defectuós | fitxersequencialvalor.PDALabeledStoreSequence.PDAStoreSequence(String name)
+138 = No s'ha pogut fer la còpia de l'índex a memòria perquè hi ha hagut una excepció de tipus general | fitxersequencialvalor.PDALabeledStoreSequence.PDAStoreSequence(String name)
+139 = No s'ha pogut guardar l'índex a disc perquè l'índex no s'ha inicialitzat correctament | fitxersequencialvalor.PDALabeledStoreSequence.saveIndex()
+140 = No s'ha pogut guardar l'índex a disc perquè hi ha hagut una excepció de tipus general | fitxersequencialvalor.PDALabeledStoreSequence.saveIndex()
+141 = No s'ha pogut guardar l'índex a disc perquè no hi ha prou espai | fitxersequencialvalor.PDALabeledStoreSequence.saveIndex()
+142 = No s'ha pogut tancat el PDALabeledStoreSequence perquè l'índex no s'ha inicialitzat correctament | fitxersequencialvalor.PDALabeledStoreSequence.closePDAStore()
+143 = No s'ha pogut tancat el PDALabeledStoreSequence perquè hi ha hagut una excepció de tipus general en tancar l'índex | fitxersequencialvalor.PDALabeledStoreSequence.closePDAStore()
+144 = No s'ha pogut esborrar el PDALabeledStoreSequence perquè l'índex no s'ha inicialitzat correctament | fitxersequencialvalor.PDALabeledStoreSequence.deletePDAStore()  
+145 = No s'ha pogut esborrar el PDALabeledStoreSequence perquè hi ha hagut una excepció de tipus general en esborrar l'índex | fitxersequencialvalor.PDALabeledStoreSequence.deletePDAStore()
+
+
+## fitxervalor.PDALabeledStore
+
+# fitxervalor.PDALabeledStore.PDALabeledStore(String name)
+146 = El nom del PDAStore no pot superar els 27 caràcters | fitxervalor.PDALabeledStore.PDALabeledStore(String name)
+147 = El PDALabeledStore està al màxim de la seva capacitat | fitxervalor.PDALabeledStore.PDALabeledStore(String name)
+148 = No es troba cap PDALabeledStore amb el nom indicat | fitxervalor.PDALabeledStore.PDALabeledStore(String name)
+149 = Excepció de tipus general | fitxervalor.PDALabeledStore.PDALabeledStore(String name)
+
+# fitxervalor.PDALabeledStore.write(PDAStoreable object, String label)
+150 = El PDAStoreable passat com a paràmetre és null | fitxervalor.PDALabeledStore.write(PDAStoreable object, String label)
+151 = El tamany del PDAStoreable passat com a paràmetre és <=0 | fitxervalor.PDALabeledStore.write(PDAStoreable object, String label)
+152 = Ja existeix un altre PDAStoreable amb aquesta etiqueta | fitxervalor.PDALabeledStore.write(PDAStoreable object, String label)
+153 = No es pot fer l'escriptura, ja que el PDALabeledStore no és obert o bé no ha estat inicialitzat correctament | fitxervalor.PDALabeledStore.write(PDAStoreable object, String label)
+154 = No es pot fer l'escriptura, ja que el PDALabeledStore està al màxim de la seva capacitat | fitxervalor.PDALabeledStore.write(PDAStoreable object, String label)
+155 = Excepció de tipus general | fitxervalor.PDALabeledStore.write(PDAStoreable object, String label)
+
+# fitxervalor.PDALabeledStore.readUnique(String label)
+156 = No existeix cap PDAStoreable amb aquesta etiqueta, no es troba a l'índex sobre el PDALabeledStore | fitxervalor.PDALabeledStore.readUnique(String label)
+157 = No existeix cap PDAStoreable amb aquesta etiqueta, no es troba físicament al PDALabeledStore | fitxervalor.PDALabeledStore.readUnique(String label)
+158 = No es pot fer la lectura, ja que el PDALabeledStore no és obert o bé no ha estat inicialitzat correctament | fitxervalor.PDALabeledStore.readUnique(String label)  
+159 = Excepció de tipus general  | fitxervalor.PDALabeledStore.readUnique(String label)
+160 = Excepció en generar l'objecte PDAStoreable. No es troba la classe PDAStoreable | fitxervalor.PDALabeledStore.readUnique(String label)
+161 = Excepció en generar l'objecte PDAStoreable. No es pot instanciar la classe PDAStoreable | fitxervalor.PDALabeledStore.readUnique(String label)
+162 = Excepció en generar l'objecte PDAStoreable. Accés il·legal a la classe PDAStoreable | fitxervalor.PDALabeledStore.readUnique(String label)
+
+# fitxervalor.PDALabeledStore.delete(String label)
+163 = No existeix cap PDAStoreable amb aquesta etiqueta, no es troba a l'índex sobre el PDALabeledStore | fitxervalor.PDALabeledStore.delete(String label)
+164 = No existeix cap PDAStoreable amb aquesta etiqueta, no es troba físicament al PDALabeledStore | fitxervalor.PDALabeledStore.delete(String label)
+165 = No es pot fer l'escriptura, ja que el PDALabeledStore no és obert o bé no ha estat inicialitzat correctament | fitxervalor.PDALabeledStore.delete(String label)
+166 = Excepció de tipus general | fitxervalor.PDALabeledStore.delete(String label)
+
+# fitxervalor.PDALabeledStore.update(PDAStoreable object, String label)
+167 = El PDAStoreable passat com a paràmetre és null | fitxervalor.PDALabeledStore.update(PDAStoreable object, String label)
+168 = El tamany del PDAStoreable passat com a paràmetre és <=0 | fitxervalor.PDALabeledStore.update(PDAStoreable object, String label)
+169 = No existeix cap PDAStoreable amb aquesta etiqueta, no es troba a l'índex sobre el PDALabeledStore | fitxervalor.PDALabeledStore.update(PDAStoreable object, String label)
+170 = No existeix cap PDAStoreable amb aquesta etiqueta, no es troba físicament al PDALabeledStore | fitxervalor.PDALabeledStore.update(PDAStoreable object, String label) 
+171 = No es pot fer la modificació, ja que el PDALabeledStore no és obert o bé no ha estat inicialitzat correctament | fitxervalor.PDALabeledStore.update(PDAStoreable object, String label)
+172 = No es pot fer la modificació demanada, ja que el PDALabeledStore està al màxim de la seva capacitat | fitxervalor.PDALabeledStore.update(PDAStoreable object, String label)
+173 = Excepció de tipus general | fitxervalor.PDALabeledStore.update(PDAStoreable object, String label)
+
+# fitxervalor.PDALabeledStore.closePDAStore()
+174 = No es pot tancar el PDALabeledStore, ja que el PDALabeledStore no és obert o bé no ha estat inicialitzat correctament | fitxervalor.PDALabeledStore.closePDAStore()
+175 = Excepció de tipus general | fitxervalor.PDALabeledStore.closePDAStore()
+
+# fitxervalor.PDALabeledStore.deletePDAStore()
+176 = No es pot esborrar el PDALabeledStore, ja que el PDALabeledStore no és obert o bé no ha estat inicialitzat correctament | fitxervalor.PDALabeledStore.deletePDAStore()
+177 = Excepció de tipus general | fitxervalor.PDALabeledStore.deletePDAStore()
+
+# Errors generats per PDAStoreIndexVector
+178 = No s'ha pogut inserir l'element perquè no hi ha prou espai a l'índex | fitxervalor.PDALabeledStore.write(PDAStoreable object, String label)
+
+# Errors generats per PDAStoreIndexRMS
+179 = No hi ha prou espai a disc per a l'índex sobre el PDALabeledStore | fitxervalor.PDALabeledStore.PDALabeledStore(String name)
+180 = No es troba cap índex sobre el PDALabeledStore amb el nom indicat | fitxervalor.PDALabeledStore.PDALabeledStore(String name)
+181 = Excepció de tipus general | fitxervalor.PDALabeledStore.PDALabeledStore(String name)
+182 = No s'ha pogut fer la còpia de l'índex a memòria perquè no hi ha prou espai | fitxervalor.PDALabeledStore.PDALabeledStore(String name)
+183 = No s'ha pogut fer la còpia de l'índex a memòria perquè l'índex no s'ha inicialitzat correctament | fitxervalor.PDALabeledStore.PDALabeledStore(String name)
+184 = No s'ha pogut fer la còpia de l'índex a memòria perquè l'índex és defectuós | fitxervalor.PDALabeledStore.PDALabeledStore(String name)
+185 = No s'ha pogut fer la còpia de l'índex a memòria perquè hi ha hagut una excepció de tipus general | fitxervalor.PDALabeledStore.PDALabeledStore(String name)
+186 = No s'ha pogut guardar l'índex a disc perquè l'índex no s'ha inicialitzat correctament | fitxervalor.PDALabeledStore.saveIndex()
+187 = No s'ha pogut guardar l'índex a disc perquè hi ha hagut una excepció de tipus general | fitxervalor.PDALabeledStore.saveIndex()
+188 = No s'ha pogut guardar l'índex a disc perquè no hi ha prou espai | fitxervalor.PDALabeledStore.saveIndex()
+189 = No s'ha pogut tancat el PDALabeledStore perquè l'índex no s'ha inicialitzat correctament | fitxervalor.PDALabeledStore.closePDAStore()
+190 = No s'ha pogut tancat el PDALabeledStore perquè hi ha hagut una excepció de tipus general en tancar l'índex | fitxervalor.PDALabeledStore.closePDAStore()
+191 = No s'ha pogut esborrar el PDALabeledStore perquè l'índex no s'ha inicialitzat correctament | fitxervalor.PDALabeledStore.deletePDAStore()  
+192 = No s'ha pogut esborrar el PDALabeledStore perquè hi ha hagut una excepció de tipus general en esborrar l'índex | fitxervalor.PDALabeledStore.deletePDAStore()
+
+## J2MEDBException Excepciones
+
+# Errors generats a la classe J2MEColumn
+301 = El tamany màxim per les dades de la columna supera el màxim permès | J2MEColumn()
+302 = El format del tipus de dades indicat és incorrecte | J2MEColumn()
+
+# Errors generats a la classe J2MEColumn.ColumType
+##302 = El format del tipus de dades indicat és incorrecte | J2MEColumn.ColumnType.getType(String javaType)
+##303 = El format del tipus de dades indicat és incorrecte | J2MEColumn.ColumnType.getSize(String columType)
+
+# Errors generats a la classe J2MERow
+304 = L'índex és major que el número d'atributs de la taula | J2MERow.getColValue(int index)
+305 = El nom de columna no existeix a la taula | J2MERow.getColValueByName(String colName)
+306 = L'índex és major que el número d'atributs de la taula | J2MERow.setColValue(String value, int index)
+307 = La longitud de l'atribut és més gran que el tamany màxim de la columna | J2MERow.setColValue(String value, int index)
+308 = El nom de columna no existeix a la taula | J2MERow.setColValueByName(String value, String colName)
+309 = La longitud en caràcters de l'atribut és més gran que el tamany màxim de la columna | J2MERow.setColValueByName(String value, String colName)
+
+#Errors generats a la classe J2METable
+332 = Existeix un registre a la taula amb la mateixa clau primària | J2METable.addRow(J2MERow row)
+333 = No s'ha pogut actualitzar la fila perquè la taula no ha estat oberta correctament | J2METable.update(J2MERow row)
+334 = No s'ha pogut actualitzar la fila perquè la taula s'ha arribat al límit d'espai per la taula | J2METable.update(J2MERow row)
+335 = No s'ha pogut actualitzar la fila perquè un error general de la taula | J2METable.update(J2MERow row)
+336 = No s'ha pogut actualitzar la fila perquè no es poden canviar els valors de la clau | J2METable.update(J2MERow row)
+
+#Errors generats a la classe J2MESDLIB
+
+310 = No s'ha pogut buidar la taula perquè el el gestor de DB no s'ha inicialitzat correctament | J2MESDLIB.flushTable(String tableName)
+311 = No s'ha pogut buidar la taula perquè és una taula d'esquema | J2MESDLIB.flushTable(String tableName)
+312 = No s'ha pogut buidar la taula perquè el nom de taula és incorrecte | J2MESDLIB.flushTable(String tableName)
+313 = No s'ha pogut buidar la taula perquè la taula solicitada no existeix | J2MESDLIB.flushTable(String tableName)
+314 = No s'ha pogut carregar la taula perquè el gestor de DB no s'ha inicialitzat correctament | J2MESDLIB.loadTable(String tableName)
+315 = No s'ha pogut carregar la taula perquè és una taula d'esquema | J2MESDLIB.loadTable(String tableName)
+316 = No s'ha pogut carregar la taula perquè la taula solicitada no existeix | J2MESDLIB.loadTable(String tableName)
+317 = No s'ha pogut esborrar la taula perquè el gestor de DB no s'ha inicialitzat correctament | J2MESDLIB.dropTable(String tableName)
+318 = No s'ha pogut esborrar la taula perquè és una taula d'esquema | J2MESDLIB.dropTable(String tableName)
+319 = No s'ha pogut esborrar la taula perquè el nom de taula és incorrecte | J2MESDLIB.dropTable(String tableName)
+320 = No s'ha pogut esborrar la taula perquè la taula solicitada no existeix | J2MESDLIB.dropTable(String tableName)
+321 = No s'ha pogut crear la taula perquè el gestor de DB no s'ha inicialitzat correctament | J2MESDLIB.createTable(String tableName, Vector columns, int numKeys)
+322 = No s'ha pogut crear la taula perquè té el mateix nom que una taula de l'esquema | J2MESDLIB.createTable(String tableName, Vector columns, int numKeys)
+323 = No s'ha pogut crear la taula perquè el nom de taula és incorrecte | J2MESDLIB.createTable(String tableName, Vector columns, int numKeys)
+324 = No s'ha pogut crear la taula perquè no ha indicat cap columna | J2MESDLIB.createTable(String tableName, Vector columns, int numKeys)
+325 = No s'ha pogut crear la taula perquè ja existeix una taula amb aquest nom | J2MESDLIB.createTable(String tableName, Vector columns, int numKeys)
+326 = No s'ha pogut generar la taula perquè l'string amb les dades no té el format correcte | J2MESDLIB.parseToTable (String data)
+327 = No s'ha pogut generar la taula perquè una de les columnes supera la longitud màxima permesa(255) | J2MESDLIB.parseToTable (String data)
+328 = No s'ha pogut generar la taula perquè el tipus de dades d'alguna columna no és correcte |  J2MESDLIB.parseToTable (String data)
+329 = No s'ha pogut afegir una fila a la taula perquè hi ha hagut una excepció al afegir valors a la fila |  J2MESDLIB.parseToTable (String data)
+330 = No s'ha pogut afegir una fila a la taula perquè hi ha hagut una excepció de tipus general |  J2MESDLIB.parseToTable (String data)
+331 = No s'ha pogut afegir una fila a la taula perquè un valor de la fila supera el tamany màxim de la columna |  J2MESDLIB.parseToTable (String data)
+340 = No s'ha pogut fer el volcat SQL perquè la taula indicada no existeix | J2MESDLIB.getSQLDump(String tableName)
+341 = No s'ha pogut fer el volcat SQL perquè el seek de la taula ha donat un error | J2MESDLIB.getSQLCapcalera(String tableName)
+342 = No s'ha pogut fer el volcat SQL perquè el seek de les columnes ha donat un error | J2MESDLIB.getSQLCapcalera(String tableName)
+343 = No s'ha pogut fer el volcat SQL perquè la comprobació de final de fitxer ha donat un error  | J2MESDLIB.getSQLCapcalera(String tableName)
+344 = No es pot fer volcat SQL de les taules d'esquema | J2MESDLIB.getSQLDump(String tableName)
+345 = No s'ha pogut fer el volcat SQL perquè no s'ha iniciat el sistema de BD | J2MESDLIB.getSQLDump(String tableName)
+346 = No s'ha pogut generar la taula peruquè no s'ha iniciat el sistema de BD | J2MESDLIB.parseToTable(String data)
+
+
+
+
+
+
+
+
+
+
